@@ -57,7 +57,7 @@ function App() {
 
         <div className='flex items-center justify-center gap-[20px]'>
           <button onClick={copyText}><i className="fa-regular fa-copy text-[20px]"></i></button>
-          <button onClick={generatPassword}><i className="fa-solid fa-arrows-rotate text-[20px]"></i></button>
+          <button onClick={generatPassword}><i className="fa-solid fa-arrows-rotate text-[20px] "></i></button>
         </div>
 
       </div>
