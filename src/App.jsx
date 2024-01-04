@@ -49,15 +49,17 @@ function App() {
   return (
 
     <>
-    <div>
-      <p></p>
-    </div>
+      <div className='text-center text-[30px] font-bold mb-[30px]'>
+        <p className='text-[#d22]'><span className='text-[black]'>Password</span> Generator <span className='text-[#d22] text-[3rem]'>...</span></p>
+      </div>
       <div className='flex items-center justify-evenly'>
-        <h2 className=''>{password}</h2>
 
-        <div className='flex items-center justify-center gap-[20px]'>
-          <button onClick={copyText}><i className="fa-regular fa-copy text-[20px]"></i></button>
-          <button onClick={generatPassword}><i className="fa-solid fa-arrows-rotate text-[20px] "></i></button>
+        <div className='flex items-center justify-start gap-[2rem] bg-[#ffffff] p-[50px] w-[80%] rounded-t-[5px] rounded-b-xl border-b-[10px]'>
+          <h2 className='text-[2.5rem] w-[80%]  overflow-hidden break-before-column'>{password}</h2>
+          <div className='flex items-center justify-center gap-[20px]'>
+            <button onClick={copyText}><i className="fa-regular fa-copy text-[20px]"></i></button>
+            <button onClick={generatPassword}><i className="fa-solid fa-arrows-rotate text-[20px] "></i></button>
+          </div>
         </div>
 
       </div>
@@ -72,7 +74,7 @@ function App() {
         <div className='p-[10px]'>
           <p className='pb-[5px]'>Password Length</p>
           <label htmlFor="lenght" className='mr-[10px] border-[1px] border-[#808080c9] px-[20px] py-[3px]'>{length}</label>
-          <input type="range" id="length" min={1} max={50} onChange={(e) => setLenght(e.target.value)} value={length} />
+          <input type="range" id="length" min={1} max={30} onChange={(e) => setLenght(e.target.value)} value={length} />
         </div>
 
         <div>
